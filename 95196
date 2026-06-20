@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zikr du jour</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        text-align : center ;
+        font-family :Arial ;
+        background-color : black ;
+        color : cyan ;
+        border: 2px solid cyan ;
+        height : 109vh;
+        border-radius : 10% ;
+       } 
+      p{ font-size : 450%;
+        border : 2px solid cyan ;
+        border-radius : 20%;
+        background-image : url("https://islam.ru/en/sites/default/files/imagecache/post_img_300_226/img/story/2013/03/images_10.jpeg");
+       } 
+     button { font-size :20%;
+       width : 30%;
+       height : 20vh;
+       margin : 4%;
+       border : 1px solid cyan ;
+       border-radius : 40%;
+       background-color : darkcyan ;
+       }
+      
+      button:active { font-size :20%;
+
+       width : 30%;
+
+       height : 20vh;
+
+       margin : 4%;
+
+       border : 1px solid cyan ;
+
+       border-radius : 80%;
+
+       background-color : white ;
+       
+
+       }
+     .case {
+       color :yellow ;
+       border: 2px solid  ;
+       border-radius : 10%;
+      background-color : darkred;
+       } 
+     button { font-size :20%;
+       width : 30%;
+       height : 20vh;
+       margin : 4%;
+       border : 1px solid cyan ;
+       border-radius : 40%;
+       background-color : darkcyan ;
+       }
+      
+      button:active { font-size :20%;
+
+       width : 30%;
+
+       height : 20vh;
+
+       margin : 4%;
+
+       border : 1px solid cyan ;
+
+       border-radius : 80%;
+
+       background-color : white ;
+       
+
+       }
+     .case {
+       color :yellow ;
+       border: 2px solid  ;
+       border-radius : 10%;
+
+        height : 17vh;
+       
+
+        border-radius : 010% 10% 10% 10%; 
+     background-color : darkred ;
+       margin : 10px ;
+       padding : 25px ;
+       
+       
+      } 
+    
+    
+      
+      </style>
+    
+    
+    </head>
+  <body>
+    <h1> Zikr du jour </h1>
+    <p id="score">0</p>
+   
+    <button onclick="ajjout()"></button>
+    
+    <button onclick="effacer()"></button>
+    <br>
+    
+    
+    
+    <div class="case">
+      <h4>Réalisé par Ahmadou
+      <br>
+        Style sombre
+        <br>
+            Marque  1.1
+      <br>
+        CODE ACCESSIBLE À TOUS ET PEUT ÊTRE MODIFIÉ 
+        
+      </h4>
+      </div>
+    
+    <script>
+      let score = 0
+      function ajjout() {
+        score++ ;
+        document.getElementById("score")
+       .textContent= score;
+        }
+      function effacer() {
+        
+      score = 0;
+      document.getElementById("score") 
+     .textContent=score
+       } 
+    </script>
+
+ 
+    </body>
+  </html>
